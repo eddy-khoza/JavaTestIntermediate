@@ -1,6 +1,6 @@
 package solutions.fluidity;
 
-public class Car extends AbstractVehicle implements CargoLoadable, Maintainable {
+public class ElectricCar extends AbstractVehicle implements CargoLoadable, Maintainable {
     private static final int MAX_CARGO_CAPACITY = 500;
 
     @Override
@@ -18,13 +18,9 @@ public class Car extends AbstractVehicle implements CargoLoadable, Maintainable 
 
     @Override
     public void performMaintenance() {
-        fillUpPetrol();
-        changeOil();
+        chargeBattery();
     }
 
-    private void fillUpPetrol() {
-    }
-
-    private void changeOil() {
+    private void chargeBattery() {
     }
 }
